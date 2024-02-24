@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leccionList:
   - ID: 0
-    lessons: "\xBFQue es una variabl\xF1e?"
+    lessons: "\xBFQue es una variable?"
     options:
     - ID
     - Lista
@@ -37,7 +37,7 @@ MonoBehaviour:
     - Una serie de pasos para revolver un problema
     - Es una variable
     - Una funcion
-    - "Un p\xB4rograma"
+    - Un prrograma
     - Un script
     correctAnswer: 0
   - ID: 3
@@ -49,7 +49,3 @@ MonoBehaviour:
     - Un conjunto de algoritmos
     - Una serie de TV
     correctAnswer: 3
-  - ID: 4
-    lessons: "\xBFQue es una ?"
-    options: []
-    correctAnswer: 0
