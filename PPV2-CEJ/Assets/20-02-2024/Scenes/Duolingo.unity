@@ -501,7 +501,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -829,6 +829,62 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonPref (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1016028019}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LessonContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: Lection
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: LessonData
+      value: 
+      objectReference: {fileID: 11400000, guid: f9406628762c24ddabda0ce5626269ad, type: 2}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: StageTitle
+      value: 
+      objectReference: {fileID: 1517135880}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: LessonStage
+      value: 
+      objectReference: {fileID: 1272231203}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: TotalLessons
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: CurrentLession
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: lessonContainer
+      value: 
+      objectReference: {fileID: 1704247771}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -839,6 +895,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2641930317063693276, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
   m_PrefabInstance: {fileID: 1016028016}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1016028019 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+  m_PrefabInstance: {fileID: 1016028016}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e180e65bed10421b94d8e097e9288ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1036639866
 GameObject:
   m_ObjectHideFlags: 0
@@ -2144,6 +2211,62 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonPref
       objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1717571012}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LessonContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: Lection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: LessonData
+      value: 
+      objectReference: {fileID: 11400000, guid: f9406628762c24ddabda0ce5626269ad, type: 2}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: StageTitle
+      value: 
+      objectReference: {fileID: 1517135880}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: LessonStage
+      value: 
+      objectReference: {fileID: 1272231203}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: TotalLessons
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: CurrentLession
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: lessonContainer
+      value: 
+      objectReference: {fileID: 1704247771}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2154,6 +2277,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2641930317063693276, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
   m_PrefabInstance: {fileID: 1717571009}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1717571012 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+  m_PrefabInstance: {fileID: 1717571009}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e180e65bed10421b94d8e097e9288ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1727115794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,6 +2615,62 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonPref (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2040591224}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LessonContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: Lection
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: LessonData
+      value: 
+      objectReference: {fileID: 11400000, guid: f9406628762c24ddabda0ce5626269ad, type: 2}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: StageTitle
+      value: 
+      objectReference: {fileID: 1517135880}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: LessonStage
+      value: 
+      objectReference: {fileID: 1272231203}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: TotalLessons
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: CurrentLession
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: lessonContainer
+      value: 
+      objectReference: {fileID: 1704247771}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2491,6 +2681,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2641930317063693276, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
   m_PrefabInstance: {fileID: 2040591221}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2040591224 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+  m_PrefabInstance: {fileID: 2040591221}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e180e65bed10421b94d8e097e9288ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2130765800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2583,6 +2784,62 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonPref (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2130765803}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LessonContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: Lection
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: LessonData
+      value: 
+      objectReference: {fileID: 11400000, guid: f9406628762c24ddabda0ce5626269ad, type: 2}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: StageTitle
+      value: 
+      objectReference: {fileID: 1517135880}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: LessonStage
+      value: 
+      objectReference: {fileID: 1272231203}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: TotalLessons
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: CurrentLession
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: lessonContainer
+      value: 
+      objectReference: {fileID: 1704247771}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2593,6 +2850,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2641930317063693276, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
   m_PrefabInstance: {fileID: 2130765800}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2130765803 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+  m_PrefabInstance: {fileID: 2130765800}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e180e65bed10421b94d8e097e9288ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2298102116512510858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2685,6 +2953,66 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonPref
       objectReference: {fileID: 0}
+    - target: {fileID: 6274102803519500540, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2298102116512510861}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LessonContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: Lection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: LessonData
+      value: 
+      objectReference: {fileID: 11400000, guid: f9406628762c24ddabda0ce5626269ad, type: 2}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: StageTitle
+      value: 
+      objectReference: {fileID: 1517135880}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: LessonStage
+      value: 
+      objectReference: {fileID: 1272231203}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: TotalLessons
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: CurrentLession
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: lessonContainer
+      value: 
+      objectReference: {fileID: 1704247771}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2695,6 +3023,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2641930317063693276, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
   m_PrefabInstance: {fileID: 2298102116512510858}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2298102116512510861 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+  m_PrefabInstance: {fileID: 2298102116512510858}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e180e65bed10421b94d8e097e9288ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
