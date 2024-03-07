@@ -22,5 +22,6 @@ public class Option : MonoBehaviour
     public void SelectOption()
     {
         LevelManager.Instance.SetPlayerAnswer(OptionID);
+        LevelManager.Instance.CheckPlayerState();
     }
 }
