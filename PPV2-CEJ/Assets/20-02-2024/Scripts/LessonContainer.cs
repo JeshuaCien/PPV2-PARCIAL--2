@@ -22,7 +22,7 @@ public class LessonContainer : MonoBehaviour
     [Header("Lesson Data")]
     public ScriptableObject LessonData;
 
-    void Start()
+    public void Start()
     {
         if (lessonContainer != null)
         {

@@ -47,15 +47,15 @@ MonoBehaviour:
     - Una funcion
     - Una clase
     - Un recurso
-    - Un conjunto de algoritmos
+    - conjunto de algoritmos
     - Una serie de TV
     correctAnswer: 3
   - ID: 4
     lessons: "\xBFPara que sirve for?"
     options:
-    - Para repetir una tarea
-    - Para revisar el codigo
-    - Para ordenar el codigo
-    - Un conjunto de algoritmos
-    - Para repetir un codigo
+    - repetir una tarea
+    - revisar el codigo
+    - ordenar el codigo
+    - conjunto de algoritmos
+    - repetir un codigo
     correctAnswer: 0

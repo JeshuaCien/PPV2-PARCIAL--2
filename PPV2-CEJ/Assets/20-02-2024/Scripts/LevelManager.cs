@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-[System.Serializable]
+
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour
 
     [Header("User interface")]
     public TMP_Text textQuestion;
+    public TMP_Text textGood;
     public List<Option> Question;
     public GameObject CheckButton;
     public GameObject AnswerContainer;
@@ -46,10 +47,8 @@ public class LevelManager : MonoBehaviour
     {
         //Establecemos la cantidad de preguntas en la lección.
         questionAmount = Lesson.leccionList.Count;
+        // Cargar la primera pregunta
         LoadQuestion();
-
-        //Check player input
-
     }
 
     private void LoadQuestion()
@@ -61,7 +60,7 @@ public class LevelManager : MonoBehaviour
             currentLesson = Lesson.leccionList[currentQuestion];
 
             //Establecemos la pregunta.
-            question = currentLesson.options[currentLesson.correctAnswer];
+            question = currentLesson.lessons;
 
             //Establecemos la pregunta correcta.
             correctAnswer = currentLesson.options[currentLesson.correctAnswer];
@@ -94,23 +93,27 @@ public class LevelManager : MonoBehaviour
                 //Revisamos si la pregunta es correcta o no.
                 bool isCorrect = currentLesson.options[answerFromPlayer] == correctAnswer;
 
+                // se activa la ventana que comprueba la respuesta en la UI.
                 AnswerContainer.SetActive(true);
 
+                // Se revisa si la respuesta es correcta o no es correcta.
                 if (isCorrect)
                 {
                     AnswerContainer.GetComponent<Image>().color = Green;
-                    Debug.Log("Respuesta correcta." + question + ":" + correctAnswer);
+                   textGood.text = "Respuesta correcta." + question + ":" + correctAnswer;
                 }
                 else
                 {
                     AnswerContainer.GetComponent<Image>().color = Red;
-                    Debug.Log("Respuesta incorrecta." + question + ":" + correctAnswer);
+                    textGood.text = "Respuesta incorrecta." + question + ":" + correctAnswer;
                 }
 
                 // Incrementamos el indice de la pregunta actual
                 currentQuestion++;
 
-                StartCoroutine(ShowResultAndLoadWuestion(isCorrect));
+                //Se llama la funcion ShowResultAndLoadQuestion que comienza una corrutina la cual
+                //suspendera por 2.5 segundos el proceso de comprobar y cambiar de pregunta.
+                StartCoroutine(ShowResultAndLoadQuestion(isCorrect));
 
                 // reiniciar la respuesta del usuario
                 answerFromPlayer = 9;
@@ -123,7 +126,7 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    private IEnumerator ShowResultAndLoadWuestion(bool isCorrect)
+    private IEnumerator ShowResultAndLoadQuestion(bool isCorrect)
     {
         //Ajusta el tiempo que deseas mostrar el resultado
         yield return new WaitForSeconds(2.5f);
@@ -135,7 +138,8 @@ public class LevelManager : MonoBehaviour
         LoadQuestion();
 
         //Activar el botón después de mostrar el resultado.
-        //Puedes hacer esto aquí o en LoadQuestion(), dependiendo de tu estructura por ejemplo, si el boton está en el mismo GmaeObject que el Script:
+        //Puedes hacer esto aquí o en LoadQuestion(), dependiendo de tu estructura por ejemplo,
+        //si el boton está en el mismo GmaeObject que el Script:
         //GetComponent<Button>().interactable = true;
         CheckPlayerState();
     }
@@ -147,6 +151,7 @@ public class LevelManager : MonoBehaviour
 
     public bool CheckPlayerState()
     {
+        // Checamos que al interactuar con los botones, estos cambien de color al ser seleccionados.
         if (answerFromPlayer != 9)
         {
             CheckButton.GetComponent<Button>().interactable = true;
@@ -156,7 +161,7 @@ public class LevelManager : MonoBehaviour
         else
         {
             CheckButton.GetComponent<Button>().interactable = false;
-            CheckButton.GetComponent<Image>().color = Color.grey;
+            CheckButton.GetComponent<Image>().color = Color.white;
             return false;
         }
     }
