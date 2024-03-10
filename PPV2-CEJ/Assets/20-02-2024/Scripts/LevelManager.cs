@@ -83,7 +83,7 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-
+    // Funcioón que nos manda a la siguiente pregunta.
     public void NextQuestion()
     {
         if (CheckPlayerState())
@@ -100,7 +100,7 @@ public class LevelManager : MonoBehaviour
                 if (isCorrect)
                 {
                     AnswerContainer.GetComponent<Image>().color = Green;
-                   textGood.text = "Respuesta correcta." + question + ":" + correctAnswer;
+                    textGood.text = "Respuesta correcta." + question + ":" + correctAnswer;
                 }
                 else
                 {
@@ -126,6 +126,8 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    //Función que inicia una corrutina la cual suspende el proceso del codigo
+    //dependiendo lo que se especifique dentro de está misma función.
     private IEnumerator ShowResultAndLoadQuestion(bool isCorrect)
     {
         //Ajusta el tiempo que deseas mostrar el resultado
