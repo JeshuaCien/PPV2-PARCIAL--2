@@ -8,7 +8,7 @@ Creado por Jeshua Cienfugos Estrada. Proyecto que se basa en la creación de una
 
 *----Para abrir el ejcutable----
 *4.- Se abre la carpeta que tiene nombre "Ejecutable-Lesson". 
-*5.- Se debe de abrir un archivo que tiene el Icon de Duolingo.
+*5.- Se debe de abrir un archivo que tiene el Icon de Cofre.
 
 *----Para abrir el proyecto en unity---- 
 *4.- Se debe de entrar en la carpeta del paso anterior y van a aparecer 3 carpetas adicionales de las cuales se debe de seleccionar la carpeta "Assets". 
