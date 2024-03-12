@@ -31,8 +31,9 @@
 ### ` Código ` ###
 > El código utilizado en este preoyecto es el lenguaje ` C# ` de programación moderno, basado en objetos y con seguridad de tipos. Tiene raíces en la familia de lenguajes C.
 > C# es un lenguaje orientado a objetos.
+>Todos los cripts están mejor explicados en el proyecto con comentarios.
 
-Se creo un codigo el cual se basa en 6 scripts los cuales son:
+Se basa en 6 scripts los cuales son:
 + Subject: Se creo este scrip para poder acceder a sus bariables y lista en level manager. 
   ` public int ID;
  public string lessons;
@@ -54,7 +55,69 @@ public void SelectOption()
 LevelManager.Instance.SetPlayerAnswer(OptionID);
 LevelManager.Instance.CheckPlayerState();
 }`
-+ LevelManager.
++ LevelManager. Contiene diferentes variables y un header que ordena las variables dependiendo de lo que se necesite.
+`public static LevelManager Instance;
+ [Header("Level Data")]
+ public Leccion Lesson;
+`
+`[Header("User interface")]
+ public TMP_Text textQuestion;
+ public TMP_Text textGood;
+ public List<Option> Question;
+ public GameObject CheckButton;
+ public GameObject AnswerContainer;
+ public Color Green;
+ public Color Red;
+`
+`[Header("Game Configuration")]
+ public int questionAmount = 0;
+ public int currentQuestion = 0;
+ public string question;
+ public string correctAnswer;
+ public int answerFromPlayer = 9;
+`
+` [Header("Current Lesson")]
+ public Subject currentLesson;
+`
++ Se creo un singleton el cual es para restringir la creación de objetos pertenecientes a este script.
+`  private void Awake()
+  {
+      if (Instance != null)
+      {
+          return;
+      }
+      else
+      {
+          Instance = this;
+      }
+  }`
++ Función start obtiene las preguntas de la leccion utilizando la bariable del script leccion, llama la función LoadQuestion(); que actualiza la pregunta y sus opciones. CheckPlayerState(); se llama para evaluar las respuestas.
+`void Start()
+ {
+  questionAmount = Lesson.leccionList.Count;
+  LoadQuestion();
+  CheckPlayerState();
+ }`
++ Funcion loadquestion el cual carga las opciones asegurandose que este dentro del rango de opciones, establece la respuesdta correcta y manda un mensaje al terminar de recorer todas las opciones.
+`private void LoadQuestion()
+{if (currentQuestion < questionAmount)
+ {
+  currentLesson = Lesson.leccionList[currentQuestion];
+  question = currentLesson.lessons;
+  correctAnswer = currentLesson.options[currentLesson.correctAnswer];
+  textQuestion.text = question;
+  for (int i = 0; i < currentLesson.options.Count; i++)
+   {
+    Question[i].GetComponent<Option>().OptionName = currentLesson.options[i];
+    Question[i].GetComponent<Option>().OptionID = i;
+    Question[i].GetComponent<Option>().UpdateText();
+   }
+   }
+   else
+   {Debug.Log("Fin de las preguntas");
+   }
+   }`
+---
 + LessonContainer.
 + Leccion y CambiarLesso.
 ---
