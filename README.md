@@ -280,4 +280,7 @@ public void CambiarNivel(int indice)
  + 6.- Si no funciono, en UNITY HUB se seleccionará la opción "ADD" y se seleccionará la opción "add Project from disk" después se debe de buscar la carpeta del proyecto que se llama "PPV2-CEJ"- se selecciona y se da aceptar para abrir el proyecto.
 
 ##### se subió un video en Teams donde se muestra el funcionamiento del proyecto. #####
+###### Enlaces de rferencia ######
++ [MarkDown](https://markdown.es/sintaxis-markdown/#links)
++ [Cambio de escena](https://www.youtube.com/watch?v=i1Cu73Eqswg)
 
