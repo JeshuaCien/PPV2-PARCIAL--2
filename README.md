@@ -36,13 +36,13 @@
 Se basa en 6 scripts los cuales son:
 ---
 + Subject: Se creo este scrip para poder acceder a sus bariables y lista en level manager.
-`public int ID;
++ `public int ID;
  public string lessons;
  public List<string> options;
  public int correctAnswer;  `
 ---
 + Option. Es un script el cual obtiene el componente de texto en la función Start(), actualiza el texto en la función UpdateText() y define la opcion correcta en SelectOption().
-   ` public int OptionID;
++ ` public int OptionID;
      public string OptionName;
    void Start()
 {
@@ -59,7 +59,7 @@ LevelManager.Instance.CheckPlayerState();
 }`
 ---
 + LevelManager. Contiene diferentes variables y un header que ordena las variables dependiendo de lo que se necesite.
-`public static LevelManager Instance;
++ `public static LevelManager Instance;
  [Header("Level Data")]
  public Leccion Lesson;
 `
@@ -84,7 +84,7 @@ LevelManager.Instance.CheckPlayerState();
 `
 ---
 + Se creo un singleton el cual es para restringir la creación de objetos pertenecientes a este script.
-`  private void Awake()
++ `  private void Awake()
   {
       if (Instance != null)
       {
@@ -97,7 +97,7 @@ LevelManager.Instance.CheckPlayerState();
   }`
 ---
 + Función start obtiene las preguntas de la leccion utilizando la bariable del script leccion, llama la función LoadQuestion(); que actualiza la pregunta y sus opciones. CheckPlayerState(); se llama para evaluar las respuestas.
-`void Start()
++ `void Start()
  {
   questionAmount = Lesson.leccionList.Count;
   LoadQuestion();
@@ -105,7 +105,7 @@ LevelManager.Instance.CheckPlayerState();
  }`
 ---
 + Funcion loadquestion el cual carga las opciones asegurandose que este dentro del rango de opciones, establece la respuesdta correcta y manda un mensaje al terminar de recorer todas las opciones.
-`private void LoadQuestion()
++ `private void LoadQuestion()
 {if (currentQuestion < questionAmount)
  {
   currentLesson = Lesson.leccionList[currentQuestion];
@@ -125,7 +125,7 @@ LevelManager.Instance.CheckPlayerState();
    }`
 ---
 + Funcioón que nos manda a la siguiente pregunta.
-`public void NextQuestion()
++ `public void NextQuestion()
  {
  if (CheckPlayerState())
  {
@@ -154,7 +154,7 @@ LevelManager.Instance.CheckPlayerState();
   }}`
 ---
 + Función que inicia una corrutina la cual suspende el proceso del codigo dependiendo lo que se especifique dentro de está misma función.
-`private IEnumerator ShowResultAndLoadQuestion(bool isCorrect)
++ `private IEnumerator ShowResultAndLoadQuestion(bool isCorrect)
 {
 yield return new WaitForSeconds(2.5f);
 AnswerContainer.SetActive(false);
@@ -163,7 +163,7 @@ CheckPlayerState();
 }`
 ---
 + Función SetPlayerAnswer(); para establecer la opción que selecione el jugador y CheckPlayerState(); para poder ver si el jugador interactuo con un botón de las opciones.
-` public void SetPlayerAnswer(int _answer)
++ ` public void SetPlayerAnswer(int _answer)
     {
         answerFromPlayer = _answer;
     }
@@ -182,8 +182,66 @@ CheckPlayerState();
             return false;
         }}}`
 ---
-+ LessonContainer.
-+ Leccion y CambiarLesso.
++ LessonContainer. Script que revisa si no se han asigando objetos dentro del inspector, toma los textos y los actualiza dependiendo de cada botón en el menu y activa la ventana para poder iniciar la lección.
++ ` [Header("GameObject Configuration")]
+   public int Lection = 0;
+   public int CurrentLession = 0;
+   public int TotalLessons = 0;
+   public bool AreAllLessonsComplete = false;
+ [Header("UI Configuration")]
+ public TMP_Text StageTitle;
+ public TMP_Text LessonStage;
+ [Header("External GameObject Configuration")]
+ public GameObject lessonContainer;
+ [Header("Lesson Data")]
+ public ScriptableObject LessonData;`
++ `public void Start()
+  {
+     if (lessonContainer != null)
+     {
+         OnUpdateUI();
+     }
+     else
+     {
+         Debug.LogWarning("GameObject Nulo, revisa las variables del tipo GameObject LessonContainer");
+     }
+ }`
++ `public void OnUpdateUI()
+ {
+     if (StageTitle != null || LessonStage != null)
+     {
+         StageTitle.text = "Leccion " + Lection;
+         LessonStage.text = "Leccion " + CurrentLession + " de " + TotalLessons;
+     }
+     else
+     {
+         Debug.LogWarning("GameObject Nulo, revisa las variables de tipo TMP_Text");
+     }
+ }
+ public void EnableWindow()
+ {
+     OnUpdateUI();
+     if (lessonContainer.activeSelf)
+     {
+         lessonContainer.SetActive(false);
+     }
+     else
+     {
+         lessonContainer.SetActive(true);
+     }
+ }`
++ **Leccion y CambiarLesso.**
++ **Leccion es un script que tiene en su interior una estructura para poder crear scriptable objects los cuales heredan cierta información y puede ser reescrita fuera del script. usa la lista del script subject.**
++ `[CreateAssetMenu(fileName = "New Lesson", menuName = "ScriptableObject/NeeLesson", order = 1)]
+public class Leccion : ScriptableObject
+{
+    [Header("GameObject Configuration")]
+    public int Lesson = 0;
+    [Header("Lesson Quest Configuration")]
+    public List<Subject> leccionList;
+}`
++ **Cambiar Lesson funciona para poder cambiar de escena dependiendo del indice que tenga cada una.**
++ ``
 ---
 #### Intalación del proyecto ####
  + 1.- Se debe de acceder al repositorio PPV2-PARCIAL--2 y presionar el botón " <> Code".
