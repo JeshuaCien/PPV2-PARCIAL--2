@@ -6,6 +6,10 @@ using UnityEngine;
 
 public class Leccion : ScriptableObject
 {
+    //Scriptable object que sirve para poder crear una lección la
+    //cual hereda información y puede ser alterada sin mover el codigo madre que es este mismo.
+
+    //Codigo que se hereda.
     [Header("GameObject Configuration")]
     public int Lesson = 0;
 
