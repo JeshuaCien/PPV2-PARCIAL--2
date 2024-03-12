@@ -20,9 +20,11 @@
 
 + Al selecionar una opción se va a oscurecer el botón de coprobar, el cual debe de ser presionado.
 
-+ Se selecciona una opción y se deberá de presionar el botón comprobar para poder ver si es correcta o no.
++ Se evalua la opcion, para después mostrar un mensaje si es correcta o no.
 
-+ Al final de las preguntas se puede presionar la barra espaciadora de su teclado para volver al menú.
++ despues de un par de segundos, cambiará la pregunta y se deberá de selecionar otra respuesta.
+
++ Al final de las preguntas ya no se podra elegir el botón comprobar, por lo que se deberá de apretar la tecla de espacio (Space Bar) y lo mandará al menu para repetir los pasos anteriores.
 ---
 #### Intalación del proyecto ####
  + 1.- Se debe de acceder al repositorio PPV2-PARCIAL--2 y presionar el botón " <> Code".
