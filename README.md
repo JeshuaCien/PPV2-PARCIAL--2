@@ -38,7 +38,7 @@ Se creo un codigo el cual se basa en 6 scripts los cuales son:
  public string lessons;
  public List<string> options;
  public int correctAnswer;  `
-+ Option. Es un script el cual actualiza el texto y define la opcion correcta en SelectOption().
++ Option. Es un script el cual obtiene el componente de texto en la función Start(), actualiza el texto en la función UpdateText() y define la opcion correcta en SelectOption().
    ` public int OptionID;
      public string OptionName;
    void Start()
