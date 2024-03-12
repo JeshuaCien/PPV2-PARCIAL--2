@@ -31,8 +31,32 @@
 ### ` Código ` ###
 > El código utilizado en este preoyecto es el lenguaje ` C# ` de programación moderno, basado en objetos y con seguridad de tipos. Tiene raíces en la familia de lenguajes C.
 > C# es un lenguaje orientado a objetos.
-+ Se creo un codigo el cual se basa en 6 scripts los cuales son
-  +   
+
+Se creo un codigo el cual se basa en 6 scripts los cuales son:
++ Subject: Se creo este scrip para poder acceder a sus bariables y lista en level manager. 
+  ` public int ID;
+ public string lessons;
+ public List<string> options;
+ public int correctAnswer;  `
++ Option. Es un script el cual actualiza el texto y define la opcion correcta en SelectOption().
+   ` public int OptionID;
+     public string OptionName;
+   void Start()
+{
+transform.GetChild(0).GetComponent<TMP_Text>().text = OptionName;
+}
+public void UpdateText()
+{
+transform.GetChild(0).GetComponent<TMP_Text>().text = OptionName;
+}
+public void SelectOption()
+{
+LevelManager.Instance.SetPlayerAnswer(OptionID);
+LevelManager.Instance.CheckPlayerState();
+}`
++ LevelManager.
++ LessonContainer.
++ Leccion y CambiarLesso.
 ---
 #### Intalación del proyecto ####
  + 1.- Se debe de acceder al repositorio PPV2-PARCIAL--2 y presionar el botón " <> Code".
