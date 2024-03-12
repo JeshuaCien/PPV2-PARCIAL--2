@@ -241,7 +241,23 @@ public class Leccion : ScriptableObject
     public List<Subject> leccionList;
 }`
 + **Cambiar Lesson funciona para poder cambiar de escena dependiendo del indice que tenga cada una.**
-+ ``
++ `public bool pasarNivel;
+public int IndiceNivel;
+void Update()
+{
+    if (Input.GetKeyDown(KeyCode.Space))
+    {
+        CambiarNivel(IndiceNivel);
+    }
+    if (pasarNivel)
+    {
+   CambiarNivel(IndiceNivel);
+    }
+// Función que cambia al numero que tiene dicha escena.
+public void CambiarNivel(int indice)
+{
+    SceneManager.LoadScene(indice);
+}`
 ---
 #### Intalación del proyecto ####
  + 1.- Se debe de acceder al repositorio PPV2-PARCIAL--2 y presionar el botón " <> Code".
