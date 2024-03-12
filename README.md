@@ -13,7 +13,7 @@
  + Se pasa a la siguiente pregunta.
 
  + Se visualiza un mensaje de correcto o incorrecto.
- 
+
 ---
 ### Modo de uso: ###
 + Se presenta el menu el cual tiene botones amarillos- al señecionarlos se abre una ventana la cual tiene un botón, si se presiona, se inicira la lección.
@@ -152,8 +152,35 @@ LevelManager.Instance.CheckPlayerState();
    //Cambio la escena
   }
   }}`
-
-     
+---
++ Función que inicia una corrutina la cual suspende el proceso del codigo dependiendo lo que se especifique dentro de está misma función.
+`private IEnumerator ShowResultAndLoadQuestion(bool isCorrect)
+{
+yield return new WaitForSeconds(2.5f);
+AnswerContainer.SetActive(false);
+LoadQuestion();
+CheckPlayerState();
+}`
+---
++ Función SetPlayerAnswer(); para establecer la opción que selecione el jugador y CheckPlayerState(); para poder ver si el jugador interactuo con un botón de las opciones.
+` public void SetPlayerAnswer(int _answer)
+    {
+        answerFromPlayer = _answer;
+    }
+    public bool CheckPlayerState()
+    {
+        if (answerFromPlayer != 9)
+        {
+            CheckButton.GetComponent<Button>().interactable = true;
+            CheckButton.GetComponent<Image>().color = Color.grey;
+            return true;
+        }
+        else
+        {
+            CheckButton.GetComponent<Button>().interactable = false;
+            CheckButton.GetComponent<Image>().color = Color.white;
+            return false;
+        }}}`
 ---
 + LessonContainer.
 + Leccion y CambiarLesso.
