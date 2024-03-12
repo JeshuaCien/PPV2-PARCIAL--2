@@ -34,12 +34,14 @@
 >Todos los cripts están mejor explicados en el proyecto con comentarios.
 
 Se basa en 6 scripts los cuales son:
-+ Subject: Se creo este scrip para poder acceder a sus bariables y lista en level manager. 
-  ` public int ID;
++ Subject: Se creo este scrip para poder acceder a sus bariables y lista en level manager.
+---
+`public int ID;
  public string lessons;
  public List<string> options;
  public int correctAnswer;  `
 + Option. Es un script el cual obtiene el componente de texto en la función Start(), actualiza el texto en la función UpdateText() y define la opcion correcta en SelectOption().
+---
    ` public int OptionID;
      public string OptionName;
    void Start()
@@ -56,6 +58,7 @@ LevelManager.Instance.SetPlayerAnswer(OptionID);
 LevelManager.Instance.CheckPlayerState();
 }`
 + LevelManager. Contiene diferentes variables y un header que ordena las variables dependiendo de lo que se necesite.
+---
 `public static LevelManager Instance;
  [Header("Level Data")]
  public Leccion Lesson;
@@ -80,6 +83,7 @@ LevelManager.Instance.CheckPlayerState();
  public Subject currentLesson;
 `
 + Se creo un singleton el cual es para restringir la creación de objetos pertenecientes a este script.
+---
 `  private void Awake()
   {
       if (Instance != null)
@@ -92,6 +96,7 @@ LevelManager.Instance.CheckPlayerState();
       }
   }`
 + Función start obtiene las preguntas de la leccion utilizando la bariable del script leccion, llama la función LoadQuestion(); que actualiza la pregunta y sus opciones. CheckPlayerState(); se llama para evaluar las respuestas.
+---
 `void Start()
  {
   questionAmount = Lesson.leccionList.Count;
@@ -99,6 +104,7 @@ LevelManager.Instance.CheckPlayerState();
   CheckPlayerState();
  }`
 + Funcion loadquestion el cual carga las opciones asegurandose que este dentro del rango de opciones, establece la respuesdta correcta y manda un mensaje al terminar de recorer todas las opciones.
+---
 `private void LoadQuestion()
 {if (currentQuestion < questionAmount)
  {
@@ -117,6 +123,37 @@ LevelManager.Instance.CheckPlayerState();
    {Debug.Log("Fin de las preguntas");
    }
    }`
++ Funcioón que nos manda a la siguiente pregunta.
+---
+`public void NextQuestion()
+ {
+ if (CheckPlayerState())
+ {
+ if (currentQuestion < questionAmount)
+ { 
+ bool isCorrect = currentLesson.options[answerFromPlayer] == correctAnswer;
+ AnswerContainer.SetActive(true);
+ if (isCorrect)
+ {
+ AnswerContainer.GetComponent<Image>().color = Green;
+ textGood.text = "Respuesta correcta. " + question + ": " + correctAnswer;
+  }
+   else
+  {
+  AnswerContainer.GetComponent<Image>().color = Red;
+  textGood.text = "Respuesta incorrecta. " + question + ": " + correctAnswer;
+  }
+  currentQuestion++;
+  StartCoroutine(ShowResultAndLoadQuestion(isCorrect));   
+  answerFromPlayer = 9;    
+  }
+  else
+  {
+   //Cambio la escena
+  }
+  }}`
+
+     
 ---
 + LessonContainer.
 + Leccion y CambiarLesso.
