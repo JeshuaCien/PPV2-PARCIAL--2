@@ -11,6 +11,8 @@
  + Se evalúa la opción que se seleccione.
  
  + Se pasa a la siguiente pregunta.
+
+ + Se visualiza un mensaje de correcto o incorrecto.
  
 ---
 ### Modo de uso: ###
@@ -25,6 +27,12 @@
 + despues de un par de segundos, cambiará la pregunta y se deberá de selecionar otra respuesta.
 
 + Al final de las preguntas ya no se podra elegir el botón comprobar, por lo que se deberá de apretar la tecla de espacio (Space Bar) y lo mandará al menu para repetir los pasos anteriores.
+---
+### ` Código ` ###
+> El código utilizado en este preoyecto es el lenguaje ` C# ` de programación moderno, basado en objetos y con seguridad de tipos. Tiene raíces en la familia de lenguajes C.
+> C# es un lenguaje orientado a objetos.
++ Se creo un codigo el cual se basa en 6 scripts los cuales son
+  +   
 ---
 #### Intalación del proyecto ####
  + 1.- Se debe de acceder al repositorio PPV2-PARCIAL--2 y presionar el botón " <> Code".
