@@ -4337,7 +4337,7 @@ MonoBehaviour:
   CheckButton: {fileID: 1038719543}
   AnswerContainer: {fileID: 608656018}
   Green: {r: 0.34509805, g: 0.8, b: 0.007843138, a: 1}
-  Red: {r: 1, g: 0.29411766, b: 0.29411766, a: 0}
+  Red: {r: 1, g: 0.29411766, b: 0.29411766, a: 1}
   questionAmount: 0
   currentQuestion: 0
   question: 

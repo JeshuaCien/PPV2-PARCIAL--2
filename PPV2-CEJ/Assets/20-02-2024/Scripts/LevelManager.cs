@@ -31,6 +31,8 @@ public class LevelManager : MonoBehaviour
     [Header("Current Lesson")]
     public Subject currentLesson;
 
+    //Singleton es para restringir la creación de objetos pertenecientes
+    //a una clase o el valor de un tipo, en este caso se restringe la instancia de 
     private void Awake()
     {
         if (Instance != null)
@@ -49,6 +51,9 @@ public class LevelManager : MonoBehaviour
         questionAmount = Lesson.leccionList.Count;
         // Cargar la primera pregunta
         LoadQuestion();
+
+        //Se llama la función para poder checar si se tiene una opcion selecionada.
+        CheckPlayerState();
     }
 
     private void LoadQuestion()
@@ -100,12 +105,12 @@ public class LevelManager : MonoBehaviour
                 if (isCorrect)
                 {
                     AnswerContainer.GetComponent<Image>().color = Green;
-                    textGood.text = "Respuesta correcta." + question + ":" + correctAnswer;
+                    textGood.text = "Respuesta correcta. " + question + ": " + correctAnswer;
                 }
                 else
                 {
                     AnswerContainer.GetComponent<Image>().color = Red;
-                    textGood.text = "Respuesta incorrecta." + question + ":" + correctAnswer;
+                    textGood.text = "Respuesta incorrecta. " + question + ": " + correctAnswer;
                 }
 
                 // Incrementamos el indice de la pregunta actual
@@ -156,12 +161,14 @@ public class LevelManager : MonoBehaviour
         // Checamos que al interactuar con los botones, estos cambien de color al ser seleccionados.
         if (answerFromPlayer != 9)
         {
+            // Si no se interactua se pondra de color gris :3
             CheckButton.GetComponent<Button>().interactable = true;
             CheckButton.GetComponent<Image>().color = Color.grey;
             return true;
         }
         else
         {
+            // Si no sí interactua se pondra de color blanco :3
             CheckButton.GetComponent<Button>().interactable = false;
             CheckButton.GetComponent<Image>().color = Color.white;
             return false;
