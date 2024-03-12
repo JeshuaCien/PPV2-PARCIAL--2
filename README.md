@@ -231,6 +231,7 @@ CheckPlayerState();
      }
  }`
 + **Leccion y CambiarLesso.**
+---
 + **Leccion es un script que tiene en su interior una estructura para poder crear scriptable objects los cuales heredan cierta información y puede ser reescrita fuera del script. usa la lista del script subject.**
 + `[CreateAssetMenu(fileName = "New Lesson", menuName = "ScriptableObject/NeeLesson", order = 1)]
 public class Leccion : ScriptableObject
@@ -240,6 +241,7 @@ public class Leccion : ScriptableObject
     [Header("Lesson Quest Configuration")]
     public List<Subject> leccionList;
 }`
+---
 + **Cambiar Lesson funciona para poder cambiar de escena dependiendo del indice que tenga cada una.**
 + `public bool pasarNivel;
 public int IndiceNivel;
