@@ -230,7 +230,6 @@ CheckPlayerState();
          lessonContainer.SetActive(true);
      }
  }`
-+ **Leccion y CambiarLesso.**
 ---
 + **Leccion es un script que tiene en su interior una estructura para poder crear scriptable objects los cuales heredan cierta información y puede ser reescrita fuera del script. usa la lista del script subject.**
 + `[CreateAssetMenu(fileName = "New Lesson", menuName = "ScriptableObject/NeeLesson", order = 1)]
