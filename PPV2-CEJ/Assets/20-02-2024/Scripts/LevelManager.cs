@@ -31,8 +31,8 @@ public class LevelManager : MonoBehaviour
     [Header("Current Lesson")]
     public Subject currentLesson;
 
-   //Singleton que garantizar que una clase sólo tenga una instancia y proporcionar un punto de acceso a ella.
-   //así se podrá acceder a este script.
+    //Singleton es para restringir la creación de objetos pertenecientes
+    //a una clase o el valor de un tipo, en este caso se restringe la instancia de 
     private void Awake()
     {
         if (Instance != null)
@@ -47,7 +47,7 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        //Establecemos la cantidad de preguntas en la lección para poder ser selecinadas y actualizadas.
+        //Establecemos la cantidad de preguntas en la lección.
         questionAmount = Lesson.leccionList.Count;
         // Cargar la primera pregunta
         LoadQuestion();
@@ -56,10 +56,9 @@ public class LevelManager : MonoBehaviour
         CheckPlayerState();
     }
 
-    //Función que carga la siguiente pregunta.
     private void LoadQuestion()
     {
-        //Aseguramos que la pregunta actual este dentro de los limites de la cantidad de preguntas asignadas.
+        //Aseguramos que la pregunta actual este dentro de los limites
         if (currentQuestion < questionAmount)
         {
             //Establecemos la lección actual.
@@ -68,32 +67,23 @@ public class LevelManager : MonoBehaviour
             //Establecemos la pregunta.
             question = currentLesson.lessons;
 
-            //Establecemos la pregunta correcta asignandola con la variable correctAnswer.
+            //Establecemos la pregunta correcta.
             correctAnswer = currentLesson.options[currentLesson.correctAnswer];
 
-            //Establecemos la pregunta en la UI para que aparezca la pregunta.
+            //Establecemos la pregunta en UI
             textQuestion.text = question;
 
-            //Establecemos las opciones con for que recorre todas las opciones.
+            //Establecemos las opciones
             for (int i = 0; i < currentLesson.options.Count; i++)
             {
-                //Este bloque de código sirve para iterar a través de una lista de opciones
-                //y actualizar las propiedades de los componentes Option adjuntos a los objetos Question.
-
-                // Esto implica que cada Question tiene un componente Option al que se puede acceder.
                 Question[i].GetComponent<Option>().OptionName = currentLesson.options[i];
-
-                // Esto sugiere que OptionID probablemente se use para identificar cada opción de manera única.
                 Question[i].GetComponent<Option>().OptionID = i;
-
-                //este método actualiza el texto mostrado en el componente Option basado en la opción seleccionada.
                 Question[i].GetComponent<Option>().UpdateText();
             }
         }
         else
         {
-            //Si no se cumple las reglas anteriores se manda un mensaje el cual dice:
-            // "llegamos al final de las preguntas."
+            //Si llegamos al final de las preguntas.
             Debug.Log("Fin de las preguntas");
         }
     }
@@ -101,10 +91,8 @@ public class LevelManager : MonoBehaviour
     // Funcioón que nos manda a la siguiente pregunta.
     public void NextQuestion()
     {
-        //Checa el estado de la respuesta que seleciona el jugador.
         if (CheckPlayerState())
         {
-            //Aseguramos que la pregunta actual este dentro de los limites de la cantidad de preguntas asignadas.
             if (currentQuestion < questionAmount)
             {
                 //Revisamos si la pregunta es correcta o no.
@@ -116,24 +104,16 @@ public class LevelManager : MonoBehaviour
                 // Se revisa si la respuesta es correcta o no es correcta.
                 if (isCorrect)
                 {
-                    //Si sí es correcta, se actualizara el componente Image
-                    //y se pondra de color verde para referencias que esta correcta la respuesta.
                     AnswerContainer.GetComponent<Image>().color = Green;
-                    //Se actualiza el texto, usando un arreglo para poner el mensaje que deseamos mostrar y las variables
-                    //string que contienen una cadena de letras.
                     textGood.text = "Respuesta correcta. " + question + ": " + correctAnswer;
                 }
                 else
                 {
-                    //Si no es correcta, se actualizara el componente Image
-                    //y se pondra de color rojo para referencias que esta incorrecta la respuesta.
                     AnswerContainer.GetComponent<Image>().color = Red;
-                    //Se actualiza el texto, usando un arreglo para poner el mensaje que deseamos mostrar y las variables
-                    //string que contienen una cadena de letras.
                     textGood.text = "Respuesta incorrecta. " + question + ": " + correctAnswer;
                 }
 
-                // Incrementamos el indice de la pregunta actual para que no se repita la pregunta.
+                // Incrementamos el indice de la pregunta actual
                 currentQuestion++;
 
                 //Se llama la funcion ShowResultAndLoadQuestion que comienza una corrutina la cual
@@ -171,32 +151,25 @@ public class LevelManager : MonoBehaviour
         CheckPlayerState();
     }
 
-    //Función que asigna la respuesta del jugador
     public void SetPlayerAnswer(int _answer)
     {
-     //Esta línea actualiza la respuesta del jugador con el valor proporcionado como argumento a la función.
         answerFromPlayer = _answer;
     }
 
-    //Función que revisa si el jugador interactua con un boton para cambiar el color de los botones y activarlos.
     public bool CheckPlayerState()
     {
         // Checamos que al interactuar con los botones, estos cambien de color al ser seleccionados.
         if (answerFromPlayer != 9)
         {
-            // Si no se interactua se pondra de color gris indicando que se puede interactuar con el.
-            //Se actualiza el componente button para hacer que se pueda pulsar.
+            // Si no se interactua se pondra de color gris :3
             CheckButton.GetComponent<Button>().interactable = true;
-            //Se actualiza en el componente image para cambiar su color.
             CheckButton.GetComponent<Image>().color = Color.grey;
             return true;
         }
         else
         {
-            // Si no sí interactua se pondra de color blanco idicando que no se puede interactuar con el botón.
-            //Se actualiza el componente button para hacer que no se pueda pulsar.
+            // Si no sí interactua se pondra de color blanco :3
             CheckButton.GetComponent<Button>().interactable = false;
-            //Se actualiza en el componente image para cambiar su color.
             CheckButton.GetComponent<Image>().color = Color.white;
             return false;
         }

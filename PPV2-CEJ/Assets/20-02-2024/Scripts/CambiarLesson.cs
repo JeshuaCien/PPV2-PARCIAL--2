@@ -8,7 +8,12 @@ public class CambiarLesson : MonoBehaviour
     public bool pasarNivel;
     public int IndiceNivel;
 
-    //Funcion que realiza un cambio de escena al apretar la barra espaciadora.
+    void Start()
+    {
+        
+    }
+
+    //Funcion que realiza un cmbio de escena al apretar la barra espaciadora.
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -23,7 +28,7 @@ public class CambiarLesson : MonoBehaviour
         }
     }
 
-    // Función que cambia de escena dependiendo del número de indice que contenga, se asigna en int indice.
+    // Función que cambia al numero que tiene dicha escena.
     public void CambiarNivel(int indice)
     {
         SceneManager.LoadScene(indice);

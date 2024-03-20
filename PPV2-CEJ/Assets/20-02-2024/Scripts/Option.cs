@@ -25,10 +25,10 @@ public class Option : MonoBehaviour
     }
 
     // Función que checa que se selecione una opcion y se llaman a dos fuunciones
-    // del script levelManager.
+    // de el scriopt levelManager.
     public void SelectOption()
     {
-        //Se asigna la respuesta correcta en función del ID que se encuentraen el script Subject.
+        //Se asigna la respuesta correcta.
         LevelManager.Instance.SetPlayerAnswer(OptionID);
         //Se comprueba con la funcion llamada del levelmanager se selecione una rerspuesta y se cheque si
         //los botones son interactuables.
