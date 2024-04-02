@@ -437,6 +437,7 @@ GameObject:
   - component: {fileID: 649760484}
   - component: {fileID: 649760483}
   - component: {fileID: 649760482}
+  - component: {fileID: 649760486}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -529,6 +530,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &649760486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649760481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a4320679a5b46f28b4deaa74900971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectedLesson: One
 --- !u!1 &669193380
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,6 +925,10 @@ PrefabInstance:
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: Lection
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: lessonA
+      value: Lesson4
       objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonData
@@ -1410,10 +1428,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1433517706}
-        m_TargetAssemblyTypeName: CambiarLesson, Assembly-CSharp
-        m_MethodName: CambiarNivel
-        m_Mode: 3
+      - m_Target: {fileID: 649760486}
+        m_TargetAssemblyTypeName: MainSccript, Assembly-CSharp
+        m_MethodName: BeginGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2115,7 +2133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1704247772
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2320,6 +2338,10 @@ PrefabInstance:
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: Lection
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: lessonA
+      value: Lesson3
       objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonData
@@ -2726,6 +2748,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: lessonA
+      value: Lesson2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonData
       value: 
       objectReference: {fileID: 11400000, guid: f9406628762c24ddabda0ce5626269ad, type: 2}
@@ -2893,6 +2919,10 @@ PrefabInstance:
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: Lection
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: lessonA
+      value: Lesson4
       objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonData
@@ -3066,6 +3096,10 @@ PrefabInstance:
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: Lection
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: lessonA
+      value: Lesson1
       objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonData

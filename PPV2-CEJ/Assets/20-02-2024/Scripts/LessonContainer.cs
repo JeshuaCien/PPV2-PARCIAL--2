@@ -18,9 +18,11 @@ public class LessonContainer : MonoBehaviour
 
     [Header("External GameObject Configuration")]
     public GameObject lessonContainer;
+    
 
     [Header("Lesson Data")]
     public ScriptableObject LessonData;
+    public string lessonA = "LessonName"; 
 
     public void Start()
     {
@@ -62,6 +64,7 @@ public class LessonContainer : MonoBehaviour
         {
             //Activa el objeto si está desactivado.
             lessonContainer.SetActive(true);
+            MainSccript.Instance.SetSelectedLesson("LessonName");
         }
     }
 }
