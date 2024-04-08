@@ -5,10 +5,10 @@ using System.IO;
 
 public class SaveSystem : MonoBehaviour
 {
-    public static SaveSystem Instance;
-
     public Subject data;
     public SubjectContainer subject;
+    
+    public static SaveSystem Instance;
 
 
     //Singleton-está función asegura que solo exista una instancia de la clase
@@ -38,9 +38,11 @@ public class SaveSystem : MonoBehaviour
         // Función que llama desde el inicio a la función SaveToJSON
         // la cual guarda el nombre del dato (LeccionYeah) y el tipo de dato.
         SaveToJSON("LeccionYeah.json", data);
+
+
         // Además de llamar a subject que se encarga de cargar datos de la fución
         // LoadFromJSON a el tipo de objeto donde se guardara SubjectContainer.
-        subject = LoadFromJSON<SubjectContainer>(PlayerPrefs.GetString("SelectedLesson1"));
+        subject = LoadFromJSON<SubjectContainer>(PlayerPrefs.GetString("SelectedLesson"));
     }
 
     /// <summary>

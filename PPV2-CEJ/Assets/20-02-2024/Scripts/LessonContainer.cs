@@ -22,7 +22,7 @@ public class LessonContainer : MonoBehaviour
 
     [Header("Lesson Data")]
     public ScriptableObject LessonData;
-    public string lessonA = "LessonName"; 
+    public string lessonA = "LessonN"; 
 
     public void Start()
     {
@@ -64,7 +64,8 @@ public class LessonContainer : MonoBehaviour
         {
             //Activa el objeto si está desactivado.
             lessonContainer.SetActive(true);
-            MainSccript.Instance.SetSelectedLesson("LessonName");
+            // "LessonName"
+            MainSccript.Instance.SetSelectedLesson("SelectedLesson");
         }
     }
 }

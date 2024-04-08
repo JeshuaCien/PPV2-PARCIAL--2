@@ -8,8 +8,8 @@ public class MainSccript : MonoBehaviour
     //Variable usada en el Singleton para indicar que script se usa.
     public static MainSccript Instance;
 
-    //Variable usada como parametro en PlayerPrefs como una llave.
-    public string SelectedLesson = "One";
+    
+    public string SelectedLesson = "Lesson";
 
 
     //Singleton-está función asegura que solo exista una instancia de la clase
@@ -35,9 +35,10 @@ public class MainSccript : MonoBehaviour
         /*/Tomamos el parámetro lesson, que es una cadena que representa la lección seleccionada, 
          * y lo asigna a la variable SelectedLesson./*/
         SelectedLesson = lesson;
+
         //Luego, utiliza PlayerPrefs.SetString() que es recurso usado para guardar por medio de un llave identificadora
         //un recurso ya sea booleano o string.
-        PlayerPrefs.SetString("SelectedLesson1", SelectedLesson);
+        PlayerPrefs.SetString("SelectedLesson", SelectedLesson);
     }
 
 

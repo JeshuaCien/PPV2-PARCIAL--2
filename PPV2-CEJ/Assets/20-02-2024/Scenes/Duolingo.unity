@@ -542,7 +542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62a4320679a5b46f28b4deaa74900971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SelectedLesson: One
+  SelectedLesson: Lesson
 --- !u!1 &669193380
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +892,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6274102803519500540, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: m_Name
-      value: ButtonPref (2)
+      value: ButtonPref 4
       objectReference: {fileID: 0}
     - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -933,7 +933,7 @@ PrefabInstance:
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonData
       value: 
-      objectReference: {fileID: 11400000, guid: f9406628762c24ddabda0ce5626269ad, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: StageTitle
       value: 
@@ -1355,7 +1355,6 @@ GameObject:
   - component: {fileID: 1433517702}
   - component: {fileID: 1433517705}
   - component: {fileID: 1433517704}
-  - component: {fileID: 1433517706}
   - component: {fileID: 1433517703}
   m_Layer: 5
   m_Name: BegginLesson
@@ -1478,20 +1477,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433517701}
   m_CullTransparentMesh: 1
---- !u!114 &1433517706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433517701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98772b27e8efa964296ce5772ddb3ae3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pasarNivel: 0
-  IndiceNivel: 0
 --- !u!1 &1517135878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2133,7 +2118,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1704247772
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2305,7 +2290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6274102803519500540, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: m_Name
-      value: ButtonPref
+      value: ButtonPref 3
       objectReference: {fileID: 0}
     - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2346,7 +2331,7 @@ PrefabInstance:
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonData
       value: 
-      objectReference: {fileID: 11400000, guid: f9406628762c24ddabda0ce5626269ad, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: StageTitle
       value: 
@@ -2713,7 +2698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6274102803519500540, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: m_Name
-      value: ButtonPref (1)
+      value: ButtonPref 2
       objectReference: {fileID: 0}
     - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2754,7 +2739,7 @@ PrefabInstance:
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonData
       value: 
-      objectReference: {fileID: 11400000, guid: f9406628762c24ddabda0ce5626269ad, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: StageTitle
       value: 
@@ -2886,7 +2871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6274102803519500540, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: m_Name
-      value: ButtonPref (3)
+      value: ButtonPref 5
       objectReference: {fileID: 0}
     - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2927,7 +2912,7 @@ PrefabInstance:
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonData
       value: 
-      objectReference: {fileID: 11400000, guid: f9406628762c24ddabda0ce5626269ad, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: StageTitle
       value: 
@@ -3074,11 +3059,23 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2298102116512510861}
     - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
@@ -3086,11 +3083,23 @@ PrefabInstance:
       value: EnableWindow
       objectReference: {fileID: 0}
     - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: BeginGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: LessonContainer, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MainSccript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558324160597856295, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
@@ -3104,7 +3113,7 @@ PrefabInstance:
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonData
       value: 
-      objectReference: {fileID: 11400000, guid: f9406628762c24ddabda0ce5626269ad, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: StageTitle
       value: 
