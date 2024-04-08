@@ -8,11 +8,6 @@ public class CambiarLesson : MonoBehaviour
     public bool pasarNivel;
     public int IndiceNivel;
 
-    void Start()
-    {
-        
-    }
-
     //Funcion que realiza un cmbio de escena al apretar la barra espaciadora.
     void Update()
     {

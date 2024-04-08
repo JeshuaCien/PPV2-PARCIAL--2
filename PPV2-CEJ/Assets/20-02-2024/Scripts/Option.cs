@@ -9,14 +9,19 @@ public class Option : MonoBehaviour
     public int OptionID;
     public string OptionName;
 
-    //Se obtiene el componente TMP del texto para poder actualizarlo
-    //al texto que tiene la pregunta en el scriptable object.
+    /*/ Cuando se pone este script en un boton el cual tiene como child un texto, está linea de codigo podrá obtener esa variable
+         y actualizarla dependiendo de lo que se necesite. /*/
+
+    //Metodo start para poder inicializar desde el primer frame y así obtener o acceder desde el inicio recursos y variables.
     void Start()
     {
+        //Se obtiene y establece a (OptionName) desde el Start para que se tenga acceso a el sin que ocurra un error.
         transform.GetChild(0).GetComponent<TMP_Text>().text = OptionName;
     }
 
-    //Función que actualiza el texto.
+    /*/Método que sirve para actualizar el texto que se encuentra en los botones de las opciones en la escena de la leccion.
+     * Esto se realizo para poder ver el nombre de las respuestas seleccionabes.
+   /*/
     public void UpdateText()
     {
         // Se obtiene el componente children el cual tiene el texto para
@@ -24,14 +29,14 @@ public class Option : MonoBehaviour
         transform.GetChild(0).GetComponent<TMP_Text>().text = OptionName;
     }
 
-    // Función que checa que se selecione una opcion y se llaman a dos fuunciones
-    // de el scriopt levelManager.
+    //Metodo creado para ser llamado dese el botón de la UI el cual tendra una condicion que al presionar una respuesta,
+    // se llame a las dos funciones que asignan el Id de la respuesta y comprueba si la respuesta es correcta.
     public void SelectOption()
     {
-        //Se asigna la respuesta correcta.
+        //Se asigna la respuesta correcta llamando al script LevelManager haciendo una instancia de el metodo SetPlayerAnswer.
         LevelManager.Instance.SetPlayerAnswer(OptionID);
-        //Se comprueba con la funcion llamada del levelmanager se selecione una rerspuesta y se cheque si
-        //los botones son interactuables.
+
+        //Se comprueba con la funcion llamada del levelmanager CheckPlayerState la cual checa el estado del botón si fue seleconado o no.
         LevelManager.Instance.CheckPlayerState();
     }
 }
