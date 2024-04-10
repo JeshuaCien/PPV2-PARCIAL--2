@@ -18,8 +18,8 @@ public class SaveSystem : MonoBehaviour
     //instancia de una clase para ser compartida entre diferentes partes del código.
     private void Awake()
     {
-        //Esta línea comprueba si ya existe una instancia de SaveSystem.
-        //Si ya existe, simplemente se sale del método, lo que significa que no se crea una nueva instancia.
+        /*/Esta línea comprueba si ya existe una instancia de SaveSystem.
+        Si ya existe, simplemente se sale, lo que significa que no se crea una nueva instancia./*/
         if (Instance != null)
         {
             return;
@@ -58,7 +58,7 @@ public class SaveSystem : MonoBehaviour
         /*/Se comprueba que el objeto _data no sea nulo para saber si existe un tipo de dato que guardar. /*/
         if (_data != null)
         {
-            /*/Aquí se convierte el objeto _data a una representación JSON utilizando el método ToJson de la clase JsonUtility. 
+            /*/Aquí se convierte el objeto _data a una representación JSON utilizando ToJson de la clase JsonUtility. 
             * El segundo argumento true indica que el JSON resultante se formateará para una mejor legibilidad.  /*/
             string JSON_data = JsonUtility.ToJson(_data, true);
 
@@ -129,7 +129,7 @@ public class SaveSystem : MonoBehaviour
         if (JSON_data.Length != 0)
         {
 
-            /*/Aquí se deserializa la cadena JSON en el objeto Dato utilizando el método FromJsonOverwrite de JsonUtility. 
+            /*/Aquí se deserializa la cadena JSON en el objeto Dato utilizando FromJsonOverwrite de JsonUtility. 
             * Este método sobrescribe los valores de Dato con los valores deserializados del JSON.
             * 
             * FromJsonOverwrite (reconstruye un objeto a partir del formulario serializado.)/*/

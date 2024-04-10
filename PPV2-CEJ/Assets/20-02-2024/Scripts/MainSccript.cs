@@ -12,11 +12,11 @@ public class MainSccript : MonoBehaviour
     public string SelectedLesson = "Lesson";
 
 
-    //Singleton-está función asegura que solo exista una instancia de la clase
-    //durante el ciclo de vida de la aplicación. Si se intenta crear
+    //Singleton-estï¿½ funciï¿½n asegura que solo exista una instancia de la clase
+    //durante el ciclo de vida de la aplicaciï¿½n. Si se intenta crear
     //una segunda instancia, simplemente se devuelve la instancia existente en lugar
-    //de crear una nueva. Esto es útil en situaciones donde solo se necesita una única
-    //instancia de una clase para ser compartida entre diferentes partes del código.
+    //de crear una nueva. Esto es ï¿½til en situaciones donde solo se necesita una ï¿½nica
+    //instancia de una clase para ser compartida entre diferentes partes del cï¿½digo.
     private void Awake()
     {
         if (Instance != null)
@@ -29,10 +29,10 @@ public class MainSccript : MonoBehaviour
         }
     }
 
-    /*/Este método establece la lección seleccionada en el juego. /*/
+    /*/SetSelectedLesson establece la lecciï¿½n seleccionada en el juego. /*/
     public void SetSelectedLesson(string lesson)
     {
-        /*/Tomamos el parámetro lesson, que es una cadena que representa la lección seleccionada, 
+        /*/Tomamos el parï¿½metro lesson, que es una cadena que representa la lecciï¿½n seleccionada, 
          * y lo asigna a la variable SelectedLesson./*/
         SelectedLesson = lesson;
 
@@ -42,12 +42,12 @@ public class MainSccript : MonoBehaviour
     }
 
 
-    /*/BeginGame(): Este método se llama para iniciar el juego. 
+    /*/BeginGame(): se llama para iniciar el juego. 
      * Utiliza SceneManager.LoadScene() para cargar la escena llamada "Lesson". /*/
     public void BeginGame()
     {
-        /*/Esto indica que después de seleccionar una lección y llamar a BeginGame(), 
-         * el juego cargará la escena "Lesson" para empezar a jugar./*/
+        /*/Esto indica que despuï¿½s de seleccionar una lecciï¿½n y llamar a BeginGame(), 
+         * el juego cargarï¿½ la escena "Lesson" para empezar a jugar./*/
         SceneManager.LoadScene("Lesson");
     }
 }

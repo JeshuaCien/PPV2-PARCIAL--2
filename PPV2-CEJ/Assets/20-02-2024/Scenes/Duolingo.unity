@@ -933,11 +933,15 @@ PrefabInstance:
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonData
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: f1a3f2d8f2ec2e443a146078ef9ba433, type: 2}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: StageTitle
       value: 
       objectReference: {fileID: 1517135880}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: lessonName
+      value: Lesson4
+      objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonStage
       value: 
@@ -2331,11 +2335,15 @@ PrefabInstance:
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonData
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: f1a3f2d8f2ec2e443a146078ef9ba433, type: 2}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: StageTitle
       value: 
       objectReference: {fileID: 1517135880}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: lessonName
+      value: Lesson3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonStage
       value: 
@@ -2739,11 +2747,15 @@ PrefabInstance:
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonData
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: f1a3f2d8f2ec2e443a146078ef9ba433, type: 2}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: StageTitle
       value: 
       objectReference: {fileID: 1517135880}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: lessonName
+      value: Lesson2
+      objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonStage
       value: 
@@ -2912,11 +2924,15 @@ PrefabInstance:
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonData
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: f1a3f2d8f2ec2e443a146078ef9ba433, type: 2}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: StageTitle
       value: 
       objectReference: {fileID: 1517135880}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: lessonName
+      value: Lesson5
+      objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonStage
       value: 
@@ -3113,11 +3129,15 @@ PrefabInstance:
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonData
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: f1a3f2d8f2ec2e443a146078ef9ba433, type: 2}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: StageTitle
       value: 
       objectReference: {fileID: 1517135880}
+    - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
+      propertyPath: lessonName
+      value: Lesson1
+      objectReference: {fileID: 0}
     - target: {fileID: 7304586346575608081, guid: dee216bb6128e4163aaf67aeb99d8853, type: 3}
       propertyPath: LessonStage
       value: 

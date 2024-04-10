@@ -7,7 +7,6 @@ using UnityEngine;
  * a un formato de datos que puede ser almacenado en disco o transmitido a través de la red, como JSON. /*/
 [System.Serializable] 
 
-
 public class SubjectContainer
 {
     //El header es un atributo que permite mostrar en el inspector un titulo el cual adjunta variables para un mejor orden.

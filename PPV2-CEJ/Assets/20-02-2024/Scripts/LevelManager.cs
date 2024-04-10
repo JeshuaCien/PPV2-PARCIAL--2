@@ -10,7 +10,8 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance;
 
     [Header("Level Data")]
-    public Leccion Lesson;
+    public SubjectContainer subject;
+   
 
     [Header("User interface")]
     public TMP_Text textQuestion;
@@ -31,7 +32,7 @@ public class LevelManager : MonoBehaviour
     [Header("Current Lesson")]
     public Subject currentLesson;
 
-  /*/Singleton metodo que asegura que solo exista una instancia de la clase
+  /*/Singleton asegura que solo exista una instancia de la clase
     durante el ciclo de vida de la aplicación. Si se intenta crear
     una segunda instancia, simplemente se devuelve la instancia existente en lugar
     de crear una nueva. Esto es útil en situaciones donde solo se necesita una única
@@ -40,7 +41,7 @@ public class LevelManager : MonoBehaviour
     private void Awake()
     {
         //Esta línea comprueba si ya existe una instancia de SaveSystem.
-        //Si ya existe, simplemente se sale del método, lo que significa que no se crea una nueva instancia.
+        //Si ya existe, simplemente se sale del , lo que significa que no se crea una nueva instancia.
         if (Instance != null)
         {
             return;
@@ -56,8 +57,10 @@ public class LevelManager : MonoBehaviour
     //Metodo que se inicializa desde el primer frame y se establece que se cargue la pregunta junto con sus respuestas.
     void Start()
     {
-        //Establecemos la cantidad de preguntas en la lección.
-        questionAmount = Lesson.leccionList.Count;
+        subject = SaveSystem.Instance.subject;
+
+        //Establecemos la cantidad de preguntas en la lección. .Count;
+        questionAmount = subject.leccionList.Count;
         // Cargar la primera pregunta con la función LoadQuestion la cual establece la lección actual,
         // actualiza la pregunta de la UI y establece las opciones.
         LoadQuestion();
@@ -67,7 +70,7 @@ public class LevelManager : MonoBehaviour
     }
 
 
-    //Metodo cargar y mostrar las preguntas y opciones en la interfaz de usuario durante el juego.
+    //LoadQuestion es para cargar y mostrar las preguntas y opciones en la interfaz de usuario durante el juego.
     //Además de utilizar una clave for la cual recorre las lecciones hasta que ya no existan más preguntas que mostrar.
     private void LoadQuestion()
     {
@@ -75,7 +78,7 @@ public class LevelManager : MonoBehaviour
         if (currentQuestion < questionAmount)
         {
             //Establecemos la lección actual.
-            currentLesson = Lesson.leccionList[currentQuestion];
+            currentLesson = subject.leccionList[currentQuestion];
 
             //Establecemos la pregunta.
             question = currentLesson.lessons;
