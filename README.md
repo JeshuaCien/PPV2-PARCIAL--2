@@ -48,19 +48,23 @@
 
 ##Capturas de pantalla##
 ---
-+ ![Captura 1](![Captura-Juego (1)](![1](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/0f81d2ca-e3eb-4d04-89e1-dcfc2fa0df6a)
++ ![Captura 1](![1](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/ba6cfaaf-b58c-4758-b76f-74d7ff5c2139)
+)
 )
 ).
 ---
-+ ![Captura 2](![Captura-Juego (2)](![2](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/19ff7e58-b81e-4c05-9e69-cd25b60ef1a6)
++ ![Captura 2](![2](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/75daffe9-689a-4d13-a990-5bb1fd92aea7)
+)
 )
 ).
 ---
-+ ![Captura 3](![Captura-Juego (3)](![3](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/6ce5ce58-da75-4f82-a531-a2ba684df99a)
++ ![Captura 3](![3](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/1f36bc22-34b2-4449-93c8-826ac6eaafd3)
+)
 )
 ).
 ---
-+ ![Captura 4](![Captura-Juego (4)](![4](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/7d3aefa2-893a-4244-8376-59bcb8c65e51)
++ ![Captura 4](![4](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/d61d4600-0a24-458d-889d-c37b3502e6ac)
+)
 )
 ).
 ---
