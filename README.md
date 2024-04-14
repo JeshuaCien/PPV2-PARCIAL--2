@@ -48,16 +48,16 @@
 
 ##Capturas de pantalla##
 ---
-+ ![captura 1](![1](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/4a029601-8ffa-4697-a3ee-8e28d5221931)
++ ![captura 1](![Captura-Juego (1)](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/760d3a72-dde6-48b7-8776-5dad7a053dac)
 ).
 ---
-+ ![captura 2](![2](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/e2545dc5-bb66-4c65-900b-68c5e2b7d631)
++ ![captura 2](![Captura-Juego (2)](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/16f9db25-3d2d-41a3-863c-9b4683c5f6f6)
 ).
 ---
-+ ![captura 3](![3](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/6a93392d-693d-44d2-80ec-06b0576b14c1)
++ ![captura 3](![Captura-Juego (3)](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/c0c3c54f-392c-4218-b0eb-000cf5a3407e)
 ).
 ---
-+ ![captura 4](![4](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/caa52f38-3d7d-4757-baae-80b6abb9601f)
++ ![captura 4](![Captura-Juego (4)](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/04727917-7818-46a0-b0f9-d2b9fd629084)
 ).
 ---
 #### Intalación del proyecto ####
