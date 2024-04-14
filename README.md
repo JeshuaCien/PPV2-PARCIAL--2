@@ -48,22 +48,22 @@
 
 ##Capturas de pantalla##
 ---
-+ ![Captura 1](![1](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/ba6cfaaf-b58c-4758-b76f-74d7ff5c2139)
++ ![Captura 1](![1](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/ba6cfaaf-b58c-4758-b76f-74d7ff5c2139)).
 )
 )
 ).
 ---
-+ ![Captura 2](![2](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/75daffe9-689a-4d13-a990-5bb1fd92aea7)
++ ![Captura 2](![2](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/75daffe9-689a-4d13-a990-5bb1fd92aea7)).
 )
 )
 ).
 ---
-+ ![Captura 3](![3](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/1f36bc22-34b2-4449-93c8-826ac6eaafd3)
++ ![Captura 3](![3](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/1f36bc22-34b2-4449-93c8-826ac6eaafd3)).
 )
 )
 ).
 ---
-+ ![Captura 4](![4](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/d61d4600-0a24-458d-889d-c37b3502e6ac)
++ ![Captura 4](![4](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/d61d4600-0a24-458d-889d-c37b3502e6ac)).
 )
 )
 ).
