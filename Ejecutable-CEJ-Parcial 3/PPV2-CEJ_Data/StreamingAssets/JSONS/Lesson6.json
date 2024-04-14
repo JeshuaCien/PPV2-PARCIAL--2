@@ -1,0 +1,65 @@
+{
+  "Lesson": 6,
+  "leccionList": [
+    {
+      "ID": 26,
+      "lessons": "¿Qué le dijo una impresora a otra impresora?",
+      "options": [
+        "¿Esa hoja es tuya o es una impresión mía?",
+        "Me impresionas",
+        "¿Qué tal si imprimimos una amistad duradera?",
+        "Eres la impresión de mis sueños",
+        "No se, no tengo impresora"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "ID": 27,
+      "lessons": "¿Por qué el libro de matemáticas estaba triste?",
+      "options": [
+        "Porque tenia una clase estática",
+        "Porque tenía demasiados problemas",
+        "Respuesta anterior",
+        "Porque vio su calificación de 6",
+        "no se"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "ID": 28,
+      "lessons": "¿Cómo de dice papel de baño en japones?",
+      "options": [
+        "Kita kakita",
+        "Kami",
+        "Tu moko ta seco",
+        "No se",
+        "No hablo Taka Taka"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "ID": 29,
+      "lessons": "¿Por qué el tomate se puso rojo?",
+      "options": [
+        "Porque vio a su crush",
+        "Porque se sintió avergonzado de ser vegano",
+        "Porque estaba muy caliente bajo el sol",
+        "Porque escuchó un chiste muy picante",
+        "Porque estaba practicando para ser una salsa"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "ID": 30,
+      "lessons": "¿Por qué el libro estaba tan emocionado?",
+      "options": [
+        "Porque iba a ser publicado",
+        "Porque encontró su final feliz",
+        "Porque estaba en la sección de libros de humor",
+        "Porque iba a ser protagonista de una película",
+        "Porque escuchó que su autor iba a escribir una secuela"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}

@@ -11,6 +11,6 @@ public class Subject
     public List<string> options;
     public int correctAnswer;
 
-    //Clase la cual se usa para poder acceder a sus variables, siendo esta una plantilla para poder ser heredada a levelManager.
+    //Clase la cual se usa para poder acceder a sus variables desde Leccion la cual se encarga de crear scriptable objects que se crean con está plantilla.
 }
 

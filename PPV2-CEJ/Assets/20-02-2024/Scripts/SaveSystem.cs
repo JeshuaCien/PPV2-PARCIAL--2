@@ -75,7 +75,7 @@ public class SaveSystem : MonoBehaviour
 
                 /*/Aquí se construye la ruta completa del archivo donde se guardará el JSON. 
                  * Path.Combine se usa para que se pueda mandar bien la informaciím en idferentes sistemas operativos./*/
-                string filePath = Path.Combine(Application.dataPath + "/Resources/JSONS/", filename);
+                string filePath = Path.Combine(Application.dataPath + "/StreamingAssets/JSONS/", filename);
 
                 /*/Finalmente, el JSON se escribe en el archivo especificado, 
                  * utilizando File.WriteAllText el cual escribe toda la información almacenada./*/
@@ -109,7 +109,7 @@ public class SaveSystem : MonoBehaviour
         T Dato = new T();
 
         /*/Se construye la ruta completa del archivo JSON que se va a cargar. /*/
-        string path = Application.dataPath + "/Resources/JSONS/" + _fileName + ".json";
+        string path = Application.dataPath + "/StreamingAssets/JSONS/" + _fileName + ".json";
         
         /*/Se inicializa una cadena vacía para almacenar los datos JSON leídos del archivo. 
          * Esto pra actualizar la misma cadena. /*/

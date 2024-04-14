@@ -8,14 +8,18 @@ using TMPro;
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
+    public Vidas Vida;
 
     [Header("Level Data")]
     public SubjectContainer subject;
-   
+
+    [Header("Succes")]
+    public GameObject Retry;
 
     [Header("User interface")]
     public TMP_Text textQuestion;
     public TMP_Text textGood;
+    
     public List<Option> Question;
     public GameObject CheckButton;
     public GameObject AnswerContainer;
@@ -100,10 +104,16 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            //Si llegamos al final de las preguntas.
+
             Debug.Log("Fin de las preguntas");
+            //Si llegamos al final de las preguntas, este If se encarga de poner la condición si se asigna a true al booleano EnableRetry.
+          
+            //Si se cumple la función, se activa la ventana en la UI la cual te indica regresar con el tabulador.
+            //SetActive se usa para apagar o encender algun srpite o imagen dentro del juego y la UI, en este caso, nosotros activamos la variable Retry la cual guarda una imagen.
+            Retry.SetActive(true);
         }
     }
+
 
     // Método que Carga la siguiente pregunta, usando if para poder cargar la pregunta si se cumplen las condiciones.
     //Se establece que sí se cumple la condición del CheckPlayerState() el cual checa si se seleciono el botón, al selecionarse,
@@ -136,6 +146,9 @@ public class LevelManager : MonoBehaviour
                     //Se obtienen el componente de la imagen para poder cambiarlo a rojo, esto indica que es incorrecto.
                     AnswerContainer.GetComponent<Image>().color = Red;
                     textGood.text = "Respuesta incorrecta. " + question + ": " + correctAnswer;
+                    //Se crea una variable "vida" la cual accede a tosas las funciones y variables publicas de Script Vidas
+                    //y se llama la función restar vidas por si se seleciono una respuesta incorrecta.
+                    Vida.RestarVida();
                 }
 
                 // Incrementamos el indice de la pregunta actual para que no se repita la pregunta actual.

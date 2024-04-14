@@ -48,6 +48,6 @@ public class MainSccript : MonoBehaviour
     {
         /*/Esto indica que despu�s de seleccionar una lecci�n y llamar a BeginGame(), 
          * el juego cargar� la escena "Lesson" para empezar a jugar./*/
-        SceneManager.LoadScene("Lesson");
+        SceneManager.LoadScene("1Lesson");
     }
 }

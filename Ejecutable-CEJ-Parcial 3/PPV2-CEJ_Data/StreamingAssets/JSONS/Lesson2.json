@@ -1,0 +1,65 @@
+{
+  "Lesson": 2,
+  "leccionList": [
+    {
+      "ID": 6,
+      "lessons": "¿Cuál es la función de la función Start() en Unity?",
+      "options": [
+        "Iniciar el juego",
+        "Actualizar el estado del juego",
+        "Ejecutar acciones al inicio",
+        "Detener el juego",
+        "Limpiar la memoria"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "ID": 7,
+      "lessons": "¿Qué es un prefab en Unity?",
+      "options": [
+        "Un archivo de audio",
+        "Un modelo 3D",
+        "Una instancia de un GameObject",
+        "Una secuencia de comandos",
+        "Un archivo de configuración"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "ID": 8,
+      "lessons": "¿Qué es un material en Unity?",
+      "options": [
+        "Una textura",
+        "Una secuencia de comandos",
+        "Un componente de Unity",
+        "Una animación",
+        "Un archivo de audio"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "ID": 9,
+      "lessons": "¿Cómo se llama el sistema de partículas en Unity?",
+      "options": [
+        "ParticleFX",
+        "ParticleSystem",
+        "ParticleEmitter",
+        "ParticleSimulator",
+        "ParticleManager"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "ID": 10,
+      "lessons": "¿Qué es el componente Collider en Unity?",
+      "options": [
+        "Una herramienta de iluminación",
+        "Un sistema de partículas",
+        "Un controlador de cámara",
+        "Un componente para detectar colisiones",
+        "Un sistema de física"
+      ],
+      "correctAnswer": 3
+    }
+  ]
+}

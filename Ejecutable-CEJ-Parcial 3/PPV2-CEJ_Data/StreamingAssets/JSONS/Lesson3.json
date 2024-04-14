@@ -1,0 +1,65 @@
+{
+  "Lesson": 3,
+  "leccionList": [
+    {
+      "ID": 11,
+      "lessons": "¿Qué es un componente en Unity?",
+      "options": [
+        "Una clase base",
+        "Una función matemática",
+        "Una biblioteca de recursos",
+        "Una entidad que se puede adjuntar a un GameObject",
+        "Un archivo de configuración"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "ID": 12,
+      "lessons": "¿Cuál es el propósito del componente Light en Unity?",
+      "options": [
+        "Generar sombras",
+        "Reproducir música de fondo",
+        "Controlar la interfaz de usuario",
+        "Crear animaciones",
+        "Controlar la iluminación en la escena"
+      ],
+      "correctAnswer": 4
+    },
+    {
+      "ID": 13,
+      "lessons": "¿Qué es un prefijo de nombre de función comúnmente utilizado en Unity para los métodos que responden a eventos de colisión?",
+      "options": [
+        "OnCollision",
+        "HandleCollision",
+        "DetectCollision",
+        "CollisionEvent",
+        "ProcessCollision"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "ID": 14,
+      "lessons": "¿Qué es un canvas en Unity?",
+      "options": [
+        "Una textura",
+        "Un material",
+        "Una interfaz de usuario",
+        "Una secuencia de comandos",
+        "Una instancia de un GameObject"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "ID": 15,
+      "lessons": "¿Cuál es el propósito del componente AudioSource en Unity?",
+      "options": [
+        "Controlar la interfaz de usuario",
+        "Crear efectos de sonido",
+        "Generar partículas",
+        "Detectar colisiones",
+        "Controlar la reproducción de audio"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}

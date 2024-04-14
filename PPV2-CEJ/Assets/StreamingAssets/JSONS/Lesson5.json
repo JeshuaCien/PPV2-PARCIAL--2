@@ -1,0 +1,65 @@
+{
+  "Lesson": 5,
+  "leccionList": [
+    {
+      "ID": 21,
+      "lessons": "¿Qué es el componente SphereCollider en Unity?",
+      "options": [
+        "Una herramienta de dibujo",
+        "Un componente para simular la física de una esfera",
+        "Un material",
+        "Un sistema de partículas",
+        "Un controlador de animación"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "ID": 22,
+      "lessons": "¿Cuál es el propósito del componente NavMeshAgent en Unity?",
+      "options": [
+        "Controlar la iluminación",
+        "Generar partículas",
+        "Controlar la navegación de agentes en el terreno",
+        "Crear interfaces de usuario",
+        "Controlar animaciones"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "ID": 23,
+      "lessons": "¿Qué es un prefab en Unity?",
+      "options": [
+        "Una textura",
+        "Un modelo 3D",
+        "Una instancia de un GameObject",
+        "Un archivo de audio",
+        "Una secuencia de comandos"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "ID": 24,
+      "lessons": "¿Cuál es el propósito del componente ParticleSystem en Unity?",
+      "options": [
+        "Controlar el movimiento físico",
+        "Crear partículas y efectos visuales",
+        "Detectar colisiones",
+        "Reproducir sonidos",
+        "Controlar la interfaz de usuario"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "ID": 25,
+      "lessons": "¿Qué es un componente CanvasGroup en Unity?",
+      "options": [
+        "Una herramienta de dibujo",
+        "Un sistema de partículas",
+        "Un controlador de cámara",
+        "Un componente para controlar la transparencia y la interacción de elementos de UI",
+        "Un componente para renderizar geometría"
+      ],
+      "correctAnswer": 3
+    }
+  ]
+}
