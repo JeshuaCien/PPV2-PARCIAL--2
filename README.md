@@ -42,7 +42,18 @@
 >
 > 
 >Todos los cripts están mejor explicados en el proyecto con comentarios.
+---
+### Importante ###
++ Puede pasar a la hora de crear archvios JSONS que estos al destinarse a una carpeta con un path, unity no tome en cuenta estos recursos al realizar el ejecutable, así que existe una solución para eso.
+  
++ Dentro de la carpeta de Assetts existe una carpeta llamada Streaming Assets la cual es reconocida por unity con suma importancia, donde se guardan los archivos Json dentro de una carpeta llamada JSONS.
++ !(ejemplo)[![Captura](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/db88d368-2733-4c0c-ad0d-c8f16d11ef38)]
 
++ En el codigo para guardar los Jsons está asignado la dirección de está carpeta.
++ !(ruta)[![Captura2](https://github.com/JeshuaCien/PPV2-PARCIAL--2/assets/156126427/19aa6194-4711-4ad1-8ee5-955380452a8f)]
+
++ Esto con la finalidad de poder hacer que el proyecto tome en cuenta los recursos creados fuera de la carpeta principal.
++ En el caso del proyecto, la carpeta principal se llama 20-02-2024 que es la decha de creación del proyecto.
 ---
 ### Imagenes ###
 
